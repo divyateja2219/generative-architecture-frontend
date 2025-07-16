@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/generative-architecture-frontend/static/css/main.b952b895.css",
-    "main.js": "/generative-architecture-frontend/static/js/main.aff8e628.js",
+    "main.css": "/generative-architecture-frontend/static/css/main.d76817ea.css",
+    "main.js": "/generative-architecture-frontend/static/js/main.469a3877.js",
     "index.html": "/generative-architecture-frontend/index.html",
-    "main.b952b895.css.map": "/generative-architecture-frontend/static/css/main.b952b895.css.map",
-    "main.aff8e628.js.map": "/generative-architecture-frontend/static/js/main.aff8e628.js.map"
+    "main.d76817ea.css.map": "/generative-architecture-frontend/static/css/main.d76817ea.css.map",
+    "main.469a3877.js.map": "/generative-architecture-frontend/static/js/main.469a3877.js.map"
   },
   "entrypoints": [
-    "static/css/main.b952b895.css",
-    "static/js/main.aff8e628.js"
+    "static/css/main.d76817ea.css",
+    "static/js/main.469a3877.js"
   ]
 }
