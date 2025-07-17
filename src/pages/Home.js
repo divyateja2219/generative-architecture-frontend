@@ -1,21 +1,37 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import EmojiFlicker from "../components/EmojiFlicker"; // ← import the component
+import "./styles.css";
 
-export default function Home() {
+function Home() {
   return (
-    <div style={{ textAlign: "center", padding: "5rem 1rem" }}>
-      <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>Hi, I'm Divya Teja 👋</h1>
-      <h2 style={{ fontSize: "1.5rem", color: "#555" }}>
+    <div className="home-container">
+      <h1 className="home-heading">
         <Typewriter
-          words={['React Developer', 'ML Enthusiast', 'Dreamer']}
-          loop={true}
+          words={[
+            "👩‍💻 Designing Algorithms",
+            "🧠 Architecting Ideas",
+            "🎨 Generating Spaces",
+            "🚀 Dream. Design. Deploy.",
+          ]}
+          loop={0}
           cursor
           cursorStyle="|"
           typeSpeed={70}
-          deleteSpeed={50}
-          delaySpeed={1000}
+          deleteSpeed={40}
+          delaySpeed={2000}
         />
-      </h2>
+        <EmojiFlicker /> {/* ← add the animated emoji */}
+      </h1>
+
+      <p className="home-subtext">
+        Welcome to my generative architecture portfolio. <br />
+        Explore ideas where design meets intelligence.
+      </p>
+
+      <div className="scroll-down">&#x25BC;</div>
     </div>
   );
 }
+
+export default Home;
