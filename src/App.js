@@ -6,6 +6,8 @@ import Projects from "./pages/Projects";
 import ThemeToggle from "./components/ThemeToggle";
 import CursorTrail from "./components/CursorTrail";
 import QuoteFooter from "./components/QuoteFooter";
+import Skills from "./components/Skills";
+
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Link to="/" style={{ margin: "0 1rem", textDecoration: "none", fontWeight: "bold" }}>Home</Link>
           <Link to="/about" style={{ margin: "0 1rem", textDecoration: "none", fontWeight: "bold" }}>About</Link>
           <Link to="/projects" style={{ margin: "0 1rem", textDecoration: "none", fontWeight: "bold" }}>Projects</Link>
+          <Link to="/skills" style={{ margin: "0 1rem", textDecoration: "none", fontWeight: "bold" }}>Skills</Link>
+
         </nav>
 
         <main style={{ padding: "2rem", textAlign: "center" }}>
@@ -25,6 +29,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
           </Routes>
         </main>
 

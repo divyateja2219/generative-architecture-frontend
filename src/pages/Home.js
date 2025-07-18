@@ -1,11 +1,11 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import EmojiFlicker from "../components/EmojiFlicker"; // ← import the component
-import "./styles.css";
+import Skills from "../components/Skills"; // ✅ Import Skills component
 
 function Home() {
   return (
     <div className="home-container">
+      {/* Typewriter intro */}
       <h1 className="home-heading">
         <Typewriter
           words={[
@@ -21,7 +21,6 @@ function Home() {
           deleteSpeed={40}
           delaySpeed={2000}
         />
-        <EmojiFlicker /> {/* ← add the animated emoji */}
       </h1>
 
       <p className="home-subtext">
@@ -30,6 +29,9 @@ function Home() {
       </p>
 
       <div className="scroll-down">&#x25BC;</div>
+
+      {/* Skills Section */}
+      <Skills />
     </div>
   );
 }

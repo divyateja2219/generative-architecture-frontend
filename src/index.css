@@ -137,3 +137,123 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+.skills-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.skill-card {
+  padding: 1rem 1.5rem;
+  background-color: var(--card-bg, #f3f3f3);
+  color: var(--text);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background-color: var(--accent-color, #6c5ce7);
+  color: white;
+}
+.skills-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: var(--background-color, #f9f9f9);
+  color: var(--text-color, #333);
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill-card {
+  padding: 1rem;
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: #f0f0f0;
+}
+/* Light theme - already defined */
+.skills-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f9f9f9;
+  color: #111;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill-card {
+  padding: 1rem;
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: #f0f0f0;
+}
+
+/* 🌙 Dark Mode Styling */
+body.dark-mode .skills-section {
+  background: #111;
+  color: #eee;
+}
+
+body.dark-mode .skill-card {
+  background: #1f1f1f;
+  border: 2px solid #444;
+  color: #f0f0f0;
+}
+
+body.dark-mode .skill-card:hover {
+  background: #2a2a2a;
+}
+
