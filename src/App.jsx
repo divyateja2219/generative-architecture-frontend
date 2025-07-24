@@ -1,19 +1,33 @@
-// src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Visualizer from "./pages/Visualizer";
-import Login from "./pages/Login";
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ThemeToggle from "./ThemeToggle";
+import CursorTrail from "./CursorTrail";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Login from "./pages/Login";
+import Visualizer from "./pages/Visualizer";
 
-export default function App() {
+function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/visualizer" element={<Visualizer />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
+      <div className="App">
+        <ThemeToggle />
+        <CursorTrail />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/visualizer" element={<Visualizer />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
+
+export default App;
