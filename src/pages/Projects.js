@@ -14,17 +14,24 @@ const Projects = () => {
   const visibleProjects = expanded ? projectData : projectData.slice(0, 3);
 
   return (
-    <div className="projects-container">
-      <h2>✨ My Projects</h2>
-      <div className="project-list">
+    <div className="projects-container px-4 py-10">
+      <h2 className="section-heading text-3xl font-bold mb-6 text-black dark:text-white">✨ My Projects</h2>
+      <div className="project-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {visibleProjects.map((project, index) => (
-          <div className="project-card" key={index}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+          <div className="project-card p-6 rounded-2xl shadow-md bg-white dark:bg-gray-800 transition-colors duration-300" key={index}>
+            <h3 className="project-title text-xl font-semibold mb-2 text-black dark:text-white">
+              {project.title}
+            </h3>
+            <p className="project-description text-gray-700 dark:text-gray-300">
+              {project.description}
+            </p>
           </div>
         ))}
       </div>
-      <button className="show-more-btn" onClick={() => setExpanded(!expanded)}>
+      <button
+        className="show-more-btn mt-6 px-4 py-2 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors duration-200"
+        onClick={() => setExpanded(!expanded)}
+      >
         {expanded ? "Show Less" : "Show More"}
       </button>
     </div>
