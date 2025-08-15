@@ -44,7 +44,7 @@ const DEFAULTS = {
   speed: 0.6, // 0..1
   stroke: 0.5, // 0..1
   hue: 210, // base hue for dynamic palette
-  curated: "Aurora" || null,
+  ccurated: "Aurora", // or null if needed
   seed: 12345,
 };
 
